@@ -1,0 +1,6 @@
+discord.py
+python-dotenv
+googletrans==4.0.0-rc1
+aiohttp
+requests
+Flask
