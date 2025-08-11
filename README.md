@@ -112,4 +112,4 @@ Có hai cách để chạy bot:
 
 ### 📜 Giấy Phép
 
-Dự án này được cấp phép theo Giấy phép MIT. Xem file `LICENSE` để biết thêm chi tiết.
+Dự án này được cấp phép theo Giấy phép [MIT License](./LICENSE).
