@@ -1,4 +1,4 @@
---- START OF FILE README.md ---
+
 # VMOS AI Bot
 
 Một bot Discord mạnh mẽ để tạo ảnh AI, sử dụng nhiều tài khoản VMOS để tối ưu hóa việc sử dụng điểm và cung cấp các tùy chọn chuyên nghiệp.
@@ -113,5 +113,3 @@ Có hai cách để chạy bot:
 ### 📜 Giấy Phép
 
 Dự án này được cấp phép theo Giấy phép MIT. Xem file `LICENSE` để biết thêm chi tiết.
---- END OF FILE README.md ---
---- START OF FILE LICENSE ---
