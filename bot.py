@@ -6,14 +6,13 @@ from googletrans import Translator
 from typing import Literal, List
 from discord import app_commands
 
-# --- CẤU HÌNH BAN ĐẦU ---
 load_dotenv()
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 class Config:
     DISCORD_BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
-    OWNER_ID = 1370417047070048276 # ID của chủ bot
+    OWNER_ID = 1370417047070048276 # ID của discord của bạn
     API_BASE_URL = 'https://api.vmoscloud.com/vcpcloud/api'
     POINTS_PER_IMAGE = 1000
     ACCOUNTS_FILE = 'accounts.json'
@@ -24,7 +23,6 @@ def is_owner():
         return interaction.user.id == Config.OWNER_ID
     return app_commands.check(predicate)
 
-# --- HỆ THỐNG QUẢN LÝ TÀI KHOẢN ---
 class AccountManager:
     def __init__(self, file_path=Config.ACCOUNTS_FILE):
         self.file_path = file_path; self.accounts = []; self.current_index = -1
@@ -46,8 +44,7 @@ class AccountManager:
         return self.get_current_account()
 
 account_manager = AccountManager()
-
-# --- HỆ THỐNG CACHE ---
+#--cache--
 class PromptCache:
     def __init__(self, file_path=Config.PROMPT_CACHE_FILE):
         self.file_path = file_path; self.cache = self._load()
